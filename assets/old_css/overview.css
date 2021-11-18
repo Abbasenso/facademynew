@@ -1,0 +1,89 @@
+.bg-blue{
+    background-color: rgba(126, 181, 187, 0.799);
+    padding-bottom: 40px;
+    /* height: 100vh; */
+}
+.img{
+    height: 200px;
+    background-color: red;
+}
+.content{
+    background-color: #fff;
+    padding: 30px;
+}
+.res-table{
+    width: 100%;
+    /* background-color: red; */
+}
+.res-table thead{
+    border-bottom: 1px solid #0002;
+}
+.res-table th{
+    color: #0006;
+    padding: 10px 0;
+}
+.res-table .fst{
+    width: 75%;
+}
+.res-table .snd{
+    width: 20%;
+    text-align: center;
+    /* background-color: red; */
+}
+.res-table td{
+    padding: 10px 0;
+    border-bottom: 1px solid #0003;
+}
+.pad-x{
+    padding: 0px 30px;
+}
+#overview{
+    height: 40vh;
+}
+.welcome-content{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    /* background-color: red; */
+}
+.next-page{
+    text-decoration: none;
+    color: #000;
+}
+.next-page:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.overview-img{
+    width: 100%;
+    height: 220px;
+    background-color: rgb(89, 110, 248);
+}
+.overview-img img{
+    height: 100%;
+    width: 100%;
+}
+.cousex-card{
+    width: 100%;
+}
+.logout{
+    padding: 10px 15px;
+    background-color: #0007;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+.logout:hover{
+    background-color: rgb(89, 110, 248);
+    color: #fff;
+}
+@media screen and (max-width: 500px) {
+    .pad-x{
+        padding: 0;
+    }
+}

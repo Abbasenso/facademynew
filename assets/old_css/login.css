@@ -1,0 +1,399 @@
+/* login ragistration page  */
+#login {
+    /* height: 100vh; */
+    background-color: #2196f3;
+    border-radius: 10px;
+}
+
+.hit {
+    height: 95vh;
+    flex-direction: column;
+}
+
+.sign-in {
+    width: 100%;
+}
+
+.sign-in h2 {
+    margin-top: 10px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.sign-in p {
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.img-div {
+    /* background-color: blue; */
+    width: 100%;
+    height: 180px;
+}
+
+.img-div img {
+    height: 100%;
+    width: 100%;
+}
+
+.sign-box {
+    margin-top: 40px;
+    /* background-color: blue; */
+    /* padding: 0 50px; */
+}
+
+.mtt-20 {
+    margin-top: 20px;
+}
+
+.log {
+    /* background-color: red; */
+    margin-top: 25px !important;
+}
+.log-inx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    /* background-color: red; */
+    margin-bottom: 40px;
+    /* display: none; */
+    transition: 1s;
+}
+.log-inx.active{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    transition: 1s;
+}
+.registration {
+    /* background-color: ; */
+    color: #2196f3;
+    
+    /* align-items: center; */
+    padding: 20px 80px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px #0006;
+    overflow: hidden;
+}
+
+.social-reg {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+    align-items: center;
+}
+
+.social-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #2196f3;
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    /* background-color: red; */
+    border-radius: 50%;
+    border: 1px solid #1eb2a648;
+}
+
+.group {
+    width: 100%;
+    /* height: 110px; */
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+}
+
+.login label {
+    letter-spacing: 1.1px;
+    right: 10px;
+    position: absolute;
+    top: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    /* color: rgba(255, 255, 255, 0.5); */
+    /* font: 400 36.6666666667px Roboto; */
+    cursor: text;
+    transition: 0.25s ease;
+    color: #2196f3;
+}
+
+.reg-input {
+    /* display: block; */
+    font-size: 12px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border: 1px solid #2195f398;
+    border-radius: 0;
+    background: #fff;
+    color: #000;
+    /* font-size: 36.6666666667px; */
+    transition: 0.3s ease;
+}
+
+.r-name {
+    text-transform: capitalize;
+}
+
+.reg-input:valid~label {
+    top: 0;
+    /* font: 700 22px Roboto; */
+    /* color: rgba(255, 255, 255, 0.5; */
+}
+
+.reg-input:focus {
+    outline: none;
+}
+
+.reg-input:focus~label {
+    top: 0;
+    /* font: 700 22px Roboto; */
+    color: #2196f3;
+}
+
+.reg-input:focus~.bar:before {
+    transform: translateX(0);
+}
+
+.reg-input:-webkit-autofill {
+    /* box-shadow: 0 0 0px 1000px #333 inset; */
+    -webkit-text-fill-color: #2196f3 !important;
+}
+
+.bar {
+    background: #1fc4b6;
+    content: "";
+    width: 550px;
+    height: 1px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: #2196f3;
+    transform: translateX(-100%);
+}
+
+::selection {
+    background: rgba(33, 150, 243, 0.3);
+}
+
+.group p {
+    font-size: 10px;
+}
+
+.reg-submit {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-submit {
+    color: #2196f3;
+    background-color: #fff;
+    padding: 7px 40px;
+    /* width: 150px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    /* border-radius: 10px; */
+}
+
+.fpass {
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #2196f3;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.fpass:hover {
+    color: blue;
+}
+
+@media only screen and (max-width: 1190px) {
+    .sign-box {
+        padding: 0px 20px;
+    }
+
+    .registration {
+        padding: 40px 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hit{
+        height: auto;
+    }
+    .hit.active{
+        height: 60vh;
+    }
+    .sign-box{
+        padding: 0;
+    }
+   
+}
+
+/* end login ragistration page  */
+
+/* modal  */
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    /* position: fixed; */
+    height: auto;
+    /* bottom: 0; */
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.6s;
+    animation-name: slideIn;
+    animation-duration: 0.6s
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* end modal  */
+
+.btns-x{
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    height: 40px;
+    overflow: hidden;
+}
+
+.btn-5{
+    /* height: 40px; */
+    width: 150px;
+    background-color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: #2196f3;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.btn-5:hover{
+    background-color:#1eb2a6;
+    color: #fff;
+    transition: 0.4s;
+}
+.btn-5.active{
+    transition: 0.8s;
+    height: 0;
+    /* background-color: red; */
+    padding: 0;
+}
+/* h4{
+    margin-top: -20px;
+} */
